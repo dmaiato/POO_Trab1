@@ -49,7 +49,7 @@ public class Room {
 
   /**
    * Returns price attribute;
-   * @return
+   * @return Room.price
    */
   public double getPrice() {
     return this.price;
