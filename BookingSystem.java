@@ -311,6 +311,7 @@ public class BookingSystem {
     }
     
     hotel.listAvaiableRooms();
+    System.out.println();
 
     String roomSelection;
 
