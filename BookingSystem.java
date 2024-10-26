@@ -130,6 +130,11 @@ public class BookingSystem {
     do {
       System.out.print("Number: ");
       number = scanner.nextLine();
+
+      if (searchRoomByNumber(hotel, number) != null) {
+        System.out.println("Error: Room already registered.");
+        return null;
+      }
       
       System.out.print("Type: ");
       type = scanner.nextLine();
@@ -145,7 +150,7 @@ public class BookingSystem {
         return null;
       }
       
-      System.out.print("Are you sure? y/n: ");
+      System.out.print("Are you sure? (y/n): ");
       option = scanner.nextLine().charAt(0);
 
     } while (!(option == 'y' || option == 'Y'));
